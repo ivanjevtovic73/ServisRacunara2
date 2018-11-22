@@ -78,6 +78,13 @@ public class EvidencijaRacunara {
 	}
 
 	public void informacijeOEvidenciji() {
-		System.out.println("Racunar " + racunar.getSerijskiBroj() + " je u statusu " + statusServisa);
+		System.out.println("Racunar " + racunar.getSerijskiBroj() + " je u statusu " + statusServisa + " primljen na servisa dana "+ datumPrijemaServisa);
+		if(datumZavrsetkaServisa != null) System.out.println("*** Servis zavrsen dana " + datumZavrsetkaServisa +  " ***");
+		System.out.println();
+	}
+	
+	@Override
+	public String toString() {
+		return "Racunar " + racunar.getSerijskiBroj() + " je u statusu " + statusServisa;
 	}
 }

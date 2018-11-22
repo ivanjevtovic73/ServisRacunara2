@@ -4,6 +4,7 @@ public enum Status {
 	
 	ZA_POPRAVKU,
 	U_RADU,
-	ZAVRSEN_SERVIS
+	ZAVRSEN_SERVIS,
+	ROBA_PREUZETA
 
 }
